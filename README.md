@@ -1,11 +1,44 @@
-<div align="center">
+# Aanya — Maternal Healthcare AI
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A warm, empathetic AI chatbot and health dashboard for expectant mothers.
 
-  <h1>Built with AI Studio</h2>
+## Features
+- **Empathetic Chatbot**: Powered by Claude 3.5 Sonnet, providing support and guidance.
+- **Health Dashboard**: Track pregnancy progress, baby kicks, weight, blood pressure, heart rate, mood, and symptoms.
+- **Smart Data Extraction**: Aanya automatically logs health data from your chat conversations.
+- **Personalized Insights**: Pregnancy week and trimester tracking based on your due date or LMP.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Tech Stack
+- **Frontend**: React 19, Tailwind CSS 4, shadcn/ui, Recharts.
+- **Backend**: Express.js (Node.js) with Vite integration.
+- **AI**: Anthropic Claude API (Sonnet 3.5).
+- **Database**: In-memory storage for demo purposes (no external database required).
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Setup Instructions
 
-</div>
+### 1. Environment Variables
+Create a `.env` file in the root directory (using `.env.example` as a template):
+```env
+ANTHROPIC_API_KEY="your_api_key_here"
+```
+
+### 2. Installation
+```bash
+npm install
+# or
+yarn install
+```
+
+### 3. Development
+```bash
+npm run dev
+```
+
+### 4. Build for Production
+```bash
+npm run build
+npm start
+```
+
+## Disclaimer
+Aanya is an AI assistant and is not a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.
